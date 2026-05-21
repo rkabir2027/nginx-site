@@ -13,3 +13,5 @@ jobs:
         uses: actions/checkout@v4
       - name: Build docker image
         run: docker build -t nginx-site .
+      - name: Show Docker images
+        run: docker images
