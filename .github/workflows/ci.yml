@@ -8,8 +8,8 @@ jobs:
   builds:
     runs-on: ubuntu-latest
 
-  steps:
-  - name: Checkout
-    uses: actions/checkout@v4
-  - name: Build docker image
-    run: docker build -t nginx-site .
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build docker image
+        run: docker build -t nginx-site .
